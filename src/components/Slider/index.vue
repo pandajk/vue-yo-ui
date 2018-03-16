@@ -211,7 +211,7 @@ export default {
               $slider.style.transform = `translate3d(${-(this.width) * (0 + 1)}px, 0, 0)`
             }
           } catch (err) {
-            console.log(err);
+            console.log(err,1);
           }
 
         }
