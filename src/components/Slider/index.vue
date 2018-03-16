@@ -278,5 +278,5 @@ export default {
 .slider-item
   flex 1
   position relative 
-  overflow auto
+  // overflow auto
 </style>

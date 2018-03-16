@@ -3,7 +3,6 @@
   "version": "0.1.2",
   "description": "yo-ui base on vue2.x",
   "author": "PandaJ <zjarek@me.com>",
-  "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
