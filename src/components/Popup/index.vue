@@ -1,6 +1,6 @@
 <template>
   <div class="Pupop">
-    <div class="Pupop-mask" v-if="visible" @click="hide"></div>  
+    <div class="Pupop-mask" v-if="visible && showMask" @click="hide"></div>  
     <transition name="slide">
       <div class="Popup-wrapper" v-if="visible">
         <slot></slot>
@@ -14,7 +14,16 @@ export default {
 
   name: 'Pupop',
 
-  props: ['show'],
+  props: {
+    show: {
+      type: Boolean,
+      default: false
+    },
+    showMask: {
+      type: Boolean,
+      default: true
+    }
+  },
 
   data () {
     return {
